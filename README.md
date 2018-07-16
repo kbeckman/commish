@@ -17,7 +17,7 @@ _These opinions are my own_, there's no immediate need to push this gem up to [r
 To source this gem from GitHub:
 
 ```ruby
-gem 'commish', git: 'https://github.com/kbeckman/commish.git', tag: '0.1.0'
+gem 'commish', git: 'https://github.com/kbeckman/commish.git', tag: '0.1.1'
 ```
 
 Then...
