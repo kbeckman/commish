@@ -1,6 +1,7 @@
 # `commish`
 
 [![Build Status](https://travis-ci.com/kbeckman/commish.svg?branch=master)](https://travis-ci.com/kbeckman/commish)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7102e7b6ac1bc759adcc/maintainability)](https://codeclimate.com/github/kbeckman/commish/maintainability)
 
 [Rubocop](https://github.com/rubocop-hq/rubocop) came to _Serve and Protect_ your Ruby syntax... 
 ...but every cop has a Commissioner calling out orders from _the top_.
