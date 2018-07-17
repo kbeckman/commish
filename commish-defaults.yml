@@ -1,0 +1,87 @@
+AllCops:
+  TargetRubyVersion: 2.3
+
+Layout/AlignHash:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+Layout/ClassStructure:
+  Enabled: true
+  Categories:
+    association:
+      - has_one
+      - has_many
+    attribute:
+      - attr_accessor
+      - attr_reader
+      - attr_writer
+    module_inclusion:
+      - include
+      - prepend
+      - extend
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_methods
+    - private_methods
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+
+Lint/InheritException:
+  EnforcedStyle: standard_error
+
+Lint/NumberConversion:
+  Enabled: true
+
+Metrics/BlockLength:
+  Max: 25
+  Exclude:
+    - '*.gemspec'
+    - 'spec/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Enabled: true
+  Exclude:
+    - '*.gemspec'
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: true
+
+Style/ReturnNil:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*'
+
+Style/StringMethods:
+  Enabled: true

@@ -1,38 +1,49 @@
-# Commish
+# `commish`
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/commish`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.com/kbeckman/commish.svg?branch=master)](https://travis-ci.com/kbeckman/commish)
 
-TODO: Delete this and the text above, and describe your gem
+[Rubocop](https://github.com/rubocop-hq/rubocop) came to _Serve and Protect_ your Ruby syntax... 
+...but every cop has a Commissioner calling out orders from _the top_.
+
+`commish` defines the default RuboCop linting rules for all Red Four Nine, LLC. Ruby projects.
+
+> "Past heroism is no excuse for present misconduct." ~ Commissioner, Frank Regan (Blue Bloods)
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
+_These opinions are my own_, there's no immediate need to push this gem up to [rubygems.org](https://rubygems.org/). 
+
+To source this gem from GitHub:
 
 ```ruby
-gem 'commish'
+gem 'commish', git: 'https://github.com/kbeckman/commish.git', tag: '0.1.0'
 ```
 
-And then execute:
+Then...
 
-    $ bundle
+```shell
+bundle install
+```
 
-Or install it yourself as:
-
-    $ gem install commish
 
 ## Usage
 
-TODO: Write usage instructions here
+### Manual Setup
 
-## Development
+Add the following to your project's `.rubocop.yml` file:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```yaml
+inherit_gem:
+  commish: commish-defaults.yml
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+## References
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/commish.
+* [Creating Inheritable RuboCop Defaults](https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md#inheriting-configuration-from-a-dependency-gem)
+* [RuboCop Docs](https://rubocop.readthedocs.io/)
+
 
 ## License
 

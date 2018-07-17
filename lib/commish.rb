@@ -1,5 +1,5 @@
-require "commish/version"
+# frozen_string_literal: true
 
-module Commish
-  # Your code goes here...
-end
+require 'commish/version'
+
+module Commish; end
