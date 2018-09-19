@@ -1,5 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.3
+  Exclude:
+    - 'db/schema.rb'
 
 Layout/AlignHash:
   EnforcedColonStyle: table
@@ -12,8 +14,10 @@ Layout/ClassStructure:
   Enabled: true
   Categories:
     association:
-      - has_one
+      - belongs_to
+      - has_and_belongs_to_many
       - has_many
+      - has_one
     attribute:
       - attr_accessor
       - attr_reader
@@ -26,6 +30,8 @@ Layout/ClassStructure:
     - module_inclusion
     - constants
     - public_class_methods
+    - attribute
+    - association
     - initializer
     - public_methods
     - protected_methods
@@ -74,6 +80,9 @@ Style/MethodCalledOnDoEndBlock:
 
 Style/OptionHash:
   Enabled: true
+
+Style/RedundantException:
+  Enabled: false
 
 Style/ReturnNil:
   Enabled: true
