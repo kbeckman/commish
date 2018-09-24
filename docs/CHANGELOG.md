@@ -1,5 +1,16 @@
 # `commish` Changelog
 
+## 0.2.0
+
+* Switched to `asdf` (from `rvm`) for Ruby version management
+* Removed _all_ version constraints for development dependencies
+* Derivations from RuboCop defaults:
+  - AllCops (excluding `db/schema.rb` generated files)
+  - Sytle/RedundantException (disabled)
+    * Sometimes it makes sense to: `raise RuntimeError, 'error message'`
+  - Style/ClassStructure
+    * adding new items for `association` category
+    * minor tweaks for `ExpectedOrder`
 
 ## 0.1.1 (07/16/2018)
 
@@ -22,7 +33,7 @@
   - Layout/FirstArrayElementLineBreak (enabled)
   - Layout/FirstHashElementLineBreak (enabled)
   - Layout/MultilineAssignmentLayout (enabled)
-  - Lint/InheritExcpetion (enforce `StandardError`)
+  - Lint/InheritException (enforce `StandardError`)
   - Lint/NumberConversion (enabled)
   - Metrics/BlockLength (_exclusions_)
   - Metrics/LineLength (max: 120)
