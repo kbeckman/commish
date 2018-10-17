@@ -64,6 +64,9 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Max: 120
 
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
 Style/AutoResourceCleanup:
   Enabled: true
 

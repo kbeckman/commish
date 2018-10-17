@@ -1,5 +1,11 @@
 # `commish` Changelog
 
+## 0.3.0
+
+* Derivations from Rubocop defaults:
+  - Naming/VariableNumber (snake_case)
+
+
 ## 0.2.0
 
 * Switched to `asdf` (from `rvm`) for Ruby version management
@@ -11,6 +17,7 @@
   - Style/ClassStructure
     * adding new items for `association` category
     * minor tweaks for `ExpectedOrder`
+
 
 ## 0.1.1 (07/16/2018)
 
