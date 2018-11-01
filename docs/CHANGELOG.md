@@ -2,6 +2,7 @@
 
 ## 0.3.0
 
+* TravisCI update for `master` branch builds only
 * RuboCop change for Layout/EmptyLineAfterGuardClause moving to Sytle/EmptyLineAfterGuardClause
 * Removed Layout/FirstHashElementLineBreak 
 * Derivations from RuboCop defaults:
