@@ -1,5 +1,16 @@
 # `commish` Changelog
 
+## 0.3.0
+
+* TravisCI update for `master` branch builds only
+* RuboCop change for Layout/EmptyLineAfterGuardClause moving to Sytle/EmptyLineAfterGuardClause
+* Removed Layout/FirstHashElementLineBreak 
+* Derivations from RuboCop defaults:
+  - Layout/AlignHash (last argument style, ignore_implicit)
+  - Layout/MultiLineAssignmentLayout (same_line)
+  - Naming/VariableNumber (snake_case)
+
+
 ## 0.2.0
 
 * Switched to `asdf` (from `rvm`) for Ruby version management
@@ -11,6 +22,7 @@
   - Style/ClassStructure
     * adding new items for `association` category
     * minor tweaks for `ExpectedOrder`
+
 
 ## 0.1.1 (07/16/2018)
 

@@ -39,6 +39,15 @@ inherit_gem:
   commish: commish-defaults.yml
 ```
 
+### Chef Cookbooks
+
+Add the following to your project's `.rubocop.yml` file:
+
+```yaml
+inherit_from:
+  - 'https://raw.githubusercontent.com/kbeckman/commish/<latest-tag>/commish-defaults.yml'
+```
+
 
 ## References
 
