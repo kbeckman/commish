@@ -2,7 +2,11 @@
 
 ## 0.3.0
 
-* Derivations from Rubocop defaults:
+* RuboCop change for Layout/EmptyLineAfterGuardClause moving to Sytle/EmptyLineAfterGuardClause
+* Removed Layout/FirstHashElementLineBreak 
+* Derivations from RuboCop defaults:
+  - Layout/AlignHash (last argument style, ignore_implicit)
+  - Layout/MultiLineAssignmentLayout (same_line)
   - Naming/VariableNumber (snake_case)
 
 
