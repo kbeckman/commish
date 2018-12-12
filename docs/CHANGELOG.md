@@ -1,6 +1,6 @@
 # `commish` Changelog
 
-## 0.3.1
+## 0.3.1 (12/12/2018)
 
 * Renamed `Style/EmptyLineAfterGuardClause` to `Layout/EmptyLineAfterGuardClause` to correspond with the latest RuboCop
   version at the time (`0.61.1`) -- reverts change in `0.3.0`
