@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'RuboCop defaults for Red Four Nine, LLC.'
   spec.description   = 'RuboCop defaults for Red Four Nine, LLC.'
-  spec.homepage      = 'https://github.com/kbeckman/commish'
+  spec.homepage      = 'https://github.com/redfournine/commish'
   spec.license       = 'MIT'
 
   # This should track the oldest supported version of MRI...
