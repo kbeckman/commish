@@ -12,9 +12,11 @@ jobs:
       - run:
           name: Bundler Version
           command: bundle --version
-      - run: Install Dependencies
+      - run:
+          name: Install Dependencies
           command: bundle install
-      - run: Continuous Integration Tasks
+      - run:
+          name: Continuous Integration Tasks
           command: rake
 
 workflows:
