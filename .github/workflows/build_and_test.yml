@@ -1,16 +1,20 @@
 name: build_and_test
 on: [push]
 jobs:
-  check-bats-version:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - run: |
+      - name: Setup Dependencies
+        run: |
           gem install bundler
           bundle --version
           bundle install --jobs 3
           bundle exec rake ci:env
-          bundle exec rake
+      - name: Build
+        run: gem build commish.gemspec
+      - name: Lint and Test
+        run: bundle exec rake
