@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w[kbeckman@redfournine.com]
 
   spec.summary       = 'RuboCop defaults for Red Four Nine, LLC.'
-  spec.description   = 'RuboCop defaults for Red Four Nine, LLC.'
+  spec.description   = 'RuboCop base configuration delivered as a Ruby gem.'
   spec.homepage      = 'https://github.com/redfournine/commish'
   spec.license       = 'MIT'
 
@@ -29,8 +29,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
 
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'bundler',  '~> 2'
+  spec.add_development_dependency 'rake',     '~> 13'
+  spec.add_development_dependency 'rspec',    '~> 3.9'
+  spec.add_development_dependency 'rubocop',  '~> 1.8'
 end
