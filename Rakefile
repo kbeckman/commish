@@ -9,6 +9,11 @@ desc 'Defines ALL tasks required for a successful CI build...'
 task default: %w[ci:rubocop spec]
 
 namespace :ci do
+  desc 'Prints ENV_VAR context...'
+  task :env do
+    sh 'env'
+  end
+
   desc 'Invokes Rubocop for CI'
   task :rubocop do
     sh 'bundle exec rubocop'
