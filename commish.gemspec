@@ -13,12 +13,12 @@ Gem::Specification.new do |spec|
   spec.email         = %w[kbeckman@redfournine.com]
 
   spec.summary       = 'RuboCop defaults for Red Four Nine, LLC.'
-  spec.description   = 'RuboCop defaults for Red Four Nine, LLC.'
-  spec.homepage      = 'https://github.com/kbeckman/commish'
+  spec.description   = 'RuboCop base configuration delivered as a Ruby gem.'
+  spec.homepage      = 'https://github.com/redfournine/commish'
   spec.license       = 'MIT'
 
   # This should track the oldest supported version of MRI...
-  spec.required_ruby_version = '>= 2.3'
+  spec.required_ruby_version = '>= 2.6'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -29,8 +29,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
 
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'bundler',        '~> 2'
+  spec.add_development_dependency 'rake',           '~> 13'
+  spec.add_development_dependency 'rspec',          '~> 3.9'
+  spec.add_development_dependency 'rubocop',        '~> 1.8'
+  spec.add_development_dependency 'rubocop-rake',   '~> 0.5'
+  spec.add_development_dependency 'rubocop-rspec',  '~> 2.2'
 end
