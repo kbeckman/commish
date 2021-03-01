@@ -14,8 +14,20 @@ namespace :ci do
     sh 'env'
   end
 
-  desc 'Invokes Rubocop for CI'
+  desc 'Invokes Rubocop...'
   task :rubocop do
     sh 'bundle exec rubocop'
+  end
+end
+
+namespace :project do
+  desc 'Build project gem package...'
+  task :build do
+    sh 'gem build commish.gemspec --strict'
+  end
+
+  desc 'Cleanup build files...'
+  task :clean do
+    sh 'rm commish-*.gem'
   end
 end
